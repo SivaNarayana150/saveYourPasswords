@@ -73,6 +73,34 @@ const App = () => (
         className="password-manager-image"
       />
     </div>
+
+    <div className="passwords-container">
+      <div className="passwords-count-search-container">
+        <div className="password-heading-count-container">
+          <h1 className="your-passwords-heading">Your Passwords</h1>
+          <p className="password-count">o</p>
+        </div>
+        <div className="search-container">
+          <div className="search-icon-container">
+            <img
+              src="https://assets.ccbp.in/frontend/react-js/password-manager-search-img.png "
+              className="search-image"
+              alt="search"
+            />
+          </div>
+          <div className="search-input-element-container">
+            <input type="text" placeholder="search" className="input-element" />
+          </div>
+        </div>
+      </div>
+      <hr className="horizontal-line" />
+      <div>
+        <input type="checkbox" id="checkBox" className="check-box-element" />
+        <label htmlFor="checkBox" className="check-description">
+          Show Passwords
+        </label>
+      </div>
+    </div>
   </div>
 )
 
